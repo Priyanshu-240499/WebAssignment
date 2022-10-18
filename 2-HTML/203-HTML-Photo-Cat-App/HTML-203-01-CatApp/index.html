@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatApp</title>
+    <style>
+      .inner-div {
+        margin-left: 2%;
+      }
+      span{
+        font-style: italic;
+      }
+      #form-container div {
+        border: 1px solid rgba(0,0,0,0.5);
+        position: relative;
+        padding: 1%;
+        /* border-radius: 5px; */ 
+      }
+      #form-container div p{
+        position: absolute;
+        top:-50%;
+        background-color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Cat photo App</h1>
+    <h2>Cat photo</h2>
+    <div>
+      <p>Click here to view more <a href="#">cat photos.</a></p>
+      <a href="#">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="cat.img"
+        />
+      </a>
+    </div>
+
+    <div>
+      <h2>Cat Lists</h2>
+      <h3>Things Cat love:</h3>
+
+      <ul>
+        <li>cat lip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <div class="inner-div">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="lasagne.img"
+        />
+
+        <p>cats <span>love</span> lasagne</p>
+      </div>
+      <h3>Top 3 things cats hate</h3>
+
+      <ol>
+        <li>flea problem</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <div class="inner-div">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+          alt="cats-grp.img"
+        />
+        <p>cats <strong>hate</strong> other cats</p>
+      </div>
+    </div>
+
+    <h2>Cat form</h2>
+    <div id="form-container">
+      <form action="catForm" method="get">
+        <div >
+            <p>Is your cat an indoor or outdoor cat?</p>
+            <input type="radio" name="in-out" >Indoor
+            <input type="radio" name="in-out" >Outdoor
+        </div><br/>
+        <div >
+            <p>What's your cat's personality?</p>
+            <input type="checkbox" name="in-out" >Loving
+            <input type="checkbox" name="in-out" >Lazy
+            <input type="checkbox" name="in-out" >Energetic
+        </div><br/>
+        
+            <label>
+                <input type="url" placeholder="cat photo URL">
+                <input type="submit">
+            </label>
+        
+      </form>
+    </div>
+  </body>
 </html>
