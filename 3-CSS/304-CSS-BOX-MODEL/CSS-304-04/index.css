@@ -1,1 +1,15 @@
-/* start your css here */
+.nav_items{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+}
+#main{
+    background-color: navy;
+}
+a{
+   color:lightblue !important;
+   font-weight: bolder;
+   font-size: 110% !important;
+}
+
