@@ -1,1 +1,26 @@
-/* start your styling here  */
+body{
+    margin: 0%;
+}
+.title{
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 2%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container div{
+    width: 23%;
+    text-align: center;
+}
+.container div img{
+    border-radius: 5px;
+}
+.c1{
+    margin: 0.5% 0%;
+}
