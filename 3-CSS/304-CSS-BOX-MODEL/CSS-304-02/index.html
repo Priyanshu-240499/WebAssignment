@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BoxModel-2</title>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    start your code here
+    <div class="container">
+      <form action="subscribe" method="get">
+          <h2>
+          Subscribe to MammothNews
+        </h2>
+        <div>
+          <input type="text" value="Name*" class="inputs" required />
+        </div>
+        <div><input type="text" value="Surname*" class="inputs" /></div>
+        <div><input type="email" value="Email*" class="inputs" required /></div>
+        <div><input type="date" class="inputs" required /></div>
+        <div class="TC">
+          <div><input type="checkbox"  /></div>
+          
+          <div class="terms"><span>I have read and accept the terms and conditions. </span>
+            <a href="#">View Our Terms And Conditions</a></div>
+        </div>
+        <div id="btn"><button>Submit</button></div>
+      </form>
+    </div>
   </body>
 </html>
