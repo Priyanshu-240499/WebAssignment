@@ -1,1 +1,61 @@
-/* start your css here */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.black{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 40rem;
+    padding: 4%;
+}
+.white{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 40rem;
+    padding:4% ;
+}
+.maroon{
+    background-color: maroon;
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.divd{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 33.33%;
+    color: transparent;
+}
+
+.d1{
+   margin: 2% 2% 1% 2%;
+   background-color: peru;
+   width: 85%;
+   border-radius: 10px;
+   
+}
+.d2{
+    margin: 1% 2% ;
+    background-color:brown;
+    width: 95%;
+    border-radius: 5px;
+}
+.d3{
+    margin: 1% 2% 2% 2%;
+    background-color: red;
+    width: 90%;
+    border-radius: 20px 20px 50px 10px;
+}
