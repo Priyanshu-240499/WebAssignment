@@ -1,1 +1,63 @@
-/* start your styling here  */
+.container{
+    /* width: 100%; */
+    height: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'g1 g2 g2 g2 g3 g3'
+    'g4 g2 g2 g2 g5 g5'
+    'g6 g7 g8 g8 g9 g10'
+    'g11 g12 g8 g8 g13 g14'
+    ;
+    gap: 2%;
+    background-color: darkgrey;
+}
+.g1{
+    grid-area: g1;
+}
+.g2{
+    grid-area: g2;
+}
+.g3{
+    grid-area: g3;
+}
+.g4{
+    grid-area: g4;
+}
+.g5{
+    grid-area: g5;
+}
+.g6{
+    grid-area: g6;
+}
+.g7{
+    grid-area: g7;
+}
+.g8{
+    grid-area: g8;
+}
+.g9{
+    grid-area: g9;
+}
+.g10{
+    grid-area: g10;
+}
+.g11{
+    grid-area: g11;
+}
+.g12{
+    grid-area: g12;
+}
+.g13{
+    grid-area: g13;
+}
+.g14{
+    grid-area: g14;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(maroon,crimson,red,orangered,tomato,gold,yellow,rgb(224, 222, 54),lime,green,blue,purple,black);
+}

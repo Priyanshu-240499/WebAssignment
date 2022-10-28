@@ -1,1 +1,85 @@
-/* start your styling here  */
+body{
+    margin: 0%;
+}
+.container{
+    height: 220rem;
+    display: grid;
+    grid-template-columns: 1fr fr fr;
+    grid-template-rows: 2fr 2fr 1fr 0.5fr 1fr;
+    gap: 1%;
+    padding: 1%;
+    grid-template-areas: 
+    'g1 g1 g1'
+    'g2 g3 g4'
+    'g5 g6 g6'
+    'g5 g8 g9'
+    'g5 g10 g10';
+    background-color: rgb(68, 62, 62);
+}
+.g1{
+    grid-area: g1;
+}
+.DandL{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.date{
+    width: 40%;
+}
+.logo{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.g2{
+    grid-area: g2;
+}
+.g3{
+    grid-area: g3;
+}
+.g4{
+    grid-area: g4;
+}
+.g5{
+    grid-area: g5;
+}
+.g5 h4{
+    color:rgb(0, 110, 255);
+    margin: 10% 2% 0% 2%;
+    font-size: 130%;
+}
+.g5 h3{
+    color:white;
+    margin:0% 2% 10% 2%;
+    font-size: 110%;
+}
+.g6{
+    grid-area: g6;
+}
+.g7{
+    grid-area: g7;
+}
+.g8{
+    grid-area: g8;
+}
+.g9{
+    grid-area: g9;
+    display: flex;
+    justify-content: center;
+}
+.quote{
+    width: 60%;
+}
+.g9 p{
+    color:rgb(0, 110, 255) ;
+    border-bottom: 2px solid gray;
+    font-size: 220%;
+    margin: 0%;
+}
+
+.g10{
+    grid-area: g10;
+}
