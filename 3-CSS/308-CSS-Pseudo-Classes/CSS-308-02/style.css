@@ -1,1 +1,35 @@
-/* start your styling here  */
+.Myrow{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.row button{
+    width: 60%;
+}
+.hov{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid grey;
+}
+.hov a{
+    text-decoration: none;
+    color: black;
+}
+#r1{
+    display: none;
+    margin-bottom:5% ;
+}
+#button1:hover + #r1{
+    display: flex;   
+}
+#r2{
+    display: none;
+    margin-bottom:5% ;
+}
+#button2:hover + #r2{
+    display: flex;
+}
