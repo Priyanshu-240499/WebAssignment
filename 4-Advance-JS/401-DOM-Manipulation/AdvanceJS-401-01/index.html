@@ -7,6 +7,14 @@
     <title>Document</title>
   </head>
   <body>
-    Start your code here
+    <input type="text" id="input" />
+    <p  id="p"></p>
+    <script> 
+      var input=document.getElementById("input");
+      var p=document.getElementById("p");
+      input.addEventListener("input",()=>{
+        p.innerText=input.value;
+      })
+    </script>
   </body>
 </html>

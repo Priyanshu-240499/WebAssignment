@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+    <link rel="stylesheet" href="401-03.css">
+    <style>
+body{
+    box-sizing: border-box;
+    margin:0;
+}
+.slide>img{
+    width: 100%;
+}
+.slide{
+    width: 100%;
+    display: none;
+    height: 40rem;
+}
+.slide-container{
+    position: relative;
+    border: 2px solid;
+    width: 100%;
+}
+.arrow{
+    position: absolute;
+    cursor: pointer;
+    top:45%; 
+    background-color: rgba(205, 189, 189, 0.447);
+    padding:8px;
+    border-radius: 30%;
+}
+.next{
+    right:10px
+}
+.prev{
+    left:10px;
+}
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide">
+            <img src="https://img.freepik.com/premium-vector/programming-code-icon-made-with-binary-code-coding-hacker-matrix-background-with-digits-1-0_127544-1141.jpg?w=900" height="100%" alt="coding">
+        </div>
+        <div class="slide">
+            <img src="https://img.freepik.com/free-vector/developer-activity-concept-illustration_114360-2801.jpg?w=740&t=st=1667058884~exp=1667059484~hmac=606a4d893fb5f909330ea8b9ca4dd881c378dd9e108767074c406f37c3535c85" height="100%" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://img.freepik.com/premium-photo/abstract-modern-tech-programming-code-screen-developer-c-programming-language-computer-script-technology-background-software_505353-127.jpg?w=826" height="100%" alt="">
+        </div>
+    </div>
+    <span class="arrow next" onclick="controller(1)">&#10095</span>
+    <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+    <script src="401-03.js"></script>
+</body>
 </html>
