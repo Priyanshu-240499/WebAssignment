@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403-1</title>
+    <style>
+      .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30rem;
+        align-items: center;
+      }
+      #keycode{
+        border: 2px solid grey;
+        background-color: green;
+        color: white;
+        padding:1% 12%;
+      }
+      #keyboard{
+        border: 2px solid grey;
+        background-color: green;
+        color: white;
+        padding:1% 10%;
+      }
+      p{
+        color: maroon;
+        font-size: 200%;
+      }
+      .keyboard{
+        background-color: maroon;
+        color: white;
+        border: none;
+        font-size:200% ;
+        padding: 1% 10%;
+      }
+    </style>
+</head>
+<body>
+          <div class="container">
+        <input type="text" class="keyboard" placeholder="Enter text">
+          <div id="keycode">
+         <p id="text">keycode</p>
+           <p id="ans"></p>
+         </div>
+         <div id="keyboard">
+         <p id="key-pressed">Key Pressed</p>
+         <p id="key-text"></p>
+         </div>
+     </div>   
+    <script src="403-01.js"></script>
+</body>
 </html>
