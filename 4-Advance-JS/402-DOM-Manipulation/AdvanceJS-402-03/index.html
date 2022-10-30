@@ -4,9 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping List</title>
+    <title>402-3</title>
+    <script src="https://kit.fontawesome.com/e49327de27.js" crossorigin="anonymous"></script>
+    <style>
+      .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      form{
+        width: 27%;
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
   </head>
   <body>
-    Start your code here
+    <div class="container">
+    <h1>My Shopping List</h1>
+    <form action="ShoppingList" method="get">
+      <label>Enter a new item</label>
+      <input type="text" name="List item" value="" id="inpref" />
+      <input type="button" value="Add Item" onclick="fnAdd(this)" />
+      <div id="invalid" style="color: red;display: none;">Enter Text</div>
+      <ul id="ul" ></ul> 
+    </form>
+  </div>
+    
+    <script src="402-3.js"></script>
   </body>
 </html>
