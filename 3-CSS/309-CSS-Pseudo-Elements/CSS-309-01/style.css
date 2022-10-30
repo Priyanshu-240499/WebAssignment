@@ -1,1 +1,21 @@
-/* start your styling here  */
+.Mycontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.data>h1,.data>h5{
+    color: rgb(82, 75, 75);
+}
+.data{
+    width: 70%;
+}
+#Mytblid{
+    width: 100%;
+}
+#Mytblid>table{
+    width: 100%;
+}
+
