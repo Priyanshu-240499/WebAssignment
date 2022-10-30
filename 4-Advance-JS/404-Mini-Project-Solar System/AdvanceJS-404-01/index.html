@@ -5,8 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container{
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color:  white;
+        background-image: url("ProjectImage/galaxy.gif");
+      }
+      #details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #details>div{
+        margin:0% 4%;
+      }
+      #details input{
+        padding: 4%;
+      }
+      #details select{
+        padding: 4%;
+      }
+      #details button{
+        padding: 8%;
+        background-color: gray;
+        color: white;
+        border: 1px solid white;
+      }
+      #result{
+        display: flex;
+        height: 30rem;
+        width: 80%;
+        background-color: rgba(128, 128, 128,0.6);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+      #Planetimage{
+        width: 50%;
+        height: 100%;
+        
+      }
+      #weight{
+        text-align: center;
+        width: 50%;
+      }
+      
+      
+    </style>
   </head>
   <body>
-    Start your code here
+    <div class="container">
+      <h1>Calculate weight of an object on selected planet</h1>
+      <div id="details">
+        <div>
+          <input type="text" id="Mass" placeholder="Enter mass">
+        </div>
+        <div>
+          <select id="planet">
+            <option disabled="" selected="" value="0">-- Choose an option --</option>
+            <option class="planetname" value="3.59">Mercury</option>
+            <option class="planetname" value="9.81">Earth</option> 
+            <option class="planetname" value="25.95">Jupiter</option> 
+            <option class="planetname" value="1.62">Moon</option> 
+            <option class="planetname" value="3.77">Mars</option> 
+            <option class="planetname" value="14.07">Neptune</option> 
+            <option class="planetname" value="0.7">Pluto</option> 
+            <option class="planetname" value="11.08">Saturn</option> 
+            <option class="planetname" value="10.67">Uranus</option>  
+        </select>
+        </div>
+        <div>
+          <button id="calculate">Calculate</button>
+        </div>
+      </div>
+
+      <div id="result">
+        <img id="Planetimage" >
+        <div id="weight"><h1 id="fresult"></h1></div>
+        
+      </div>
+    </div>
+    
+    <script src="404-1.js"></script>
   </body>
 </html>
