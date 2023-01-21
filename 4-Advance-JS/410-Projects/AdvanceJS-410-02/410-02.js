@@ -7,12 +7,15 @@ const searchword=(e)=>{
         alert("Enter Text");
     }
     fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${inp}?key=${apikey}` )
-    .then((data)=>{
+   
+    .then((data)=>{    
+        // console.log(data);
         return (data.json());
     },()=>{
         console.log("no")
     })
     .then((data)=>{
+        console.log(data);
         if(data.length===0){
           result.innerText="No suggestions found" ; 
         }
@@ -41,11 +44,7 @@ const searchword=(e)=>{
             result.appendChild(ol);
            }
         }
-
-           
-            
-
-         
+ 
     })
 }
 document.getElementById("form").addEventListener('submit',searchword);
