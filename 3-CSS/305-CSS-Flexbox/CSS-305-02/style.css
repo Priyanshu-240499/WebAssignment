@@ -7,7 +7,6 @@ body{
     width: 100%;
 }
 .blue{
-    background-color: rgb(27, 27, 223);
     display: flex;
     justify-content: center;
     align-items: center;
