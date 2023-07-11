@@ -8,3 +8,4 @@ var numPeople=document.getElementById("totalPeople").value;
 document.getElementById("totaltip").value=" RS "+(billamount*serviceQuality)/numPeople+" !";
 tiplabel.style.display="inline";
 })
+
